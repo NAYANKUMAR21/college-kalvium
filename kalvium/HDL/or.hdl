@@ -1,0 +1,10 @@
+CHIP Nayan{
+    IN a,b;
+    OUT out;
+
+    PARTS:
+    Not(in=a,out=nota);
+    Not(in=b,out=notb);
+    Or(a=notb,b=notb,out=c);
+    And(a=nota,b=c,out=out);
+}

@@ -1,0 +1,23 @@
+// a or b = not(nota and notb)
+
+CHIP NayansOr{
+    IN a,b;
+    OUT out;
+
+    PARTS:
+    Not(in=a,out=nota);
+    Not(in=b,out=notb);
+    And(a=nota,b=notb,out=c);
+    Not(in=c,out=notc);
+}
+//below written code is trail
+// CHIP OrNew{
+//     IN a,b;
+//     OUT out;
+
+//     PARTS:
+//     Not(in=a,out=nota);
+//     Not(in=b,out=notb);
+//     And(a=nota,b=notb,out=c);
+//     Not(in=c,out=notc);
+// }

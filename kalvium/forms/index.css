@@ -1,0 +1,12 @@
+form {
+  margin: auto;
+}
+div {
+  text-align: center;
+}
+.form-div {
+  margin: auto;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
